@@ -1,25 +1,26 @@
-
-public class BeerSong {
+public class PhraseOMtic {
     public static void main(String[] args) {
-        int beerNum = 99;
-        String word = "bottles";
+        String[] wordListOne = {"smart", "king", "dynamic"};
+        String[] wordListTwo = {"empowered", "outside-the-box", "focused"};
+        String[] wordListThree = {"process", "vision", "space"};
 
-        while (beerNum > 0) {
+        int oneLength = 3;
+        int twoLength = 3;
+        int threeLength = 3;
+        int rand1 = (int) (Math.random() * oneLength);
+        int rand2 = (int) (Math.random() * twoLength);
+        int rand3 = (int) (Math.random() * threeLength);
 
-            if (beerNum == 1) {
-                word = "bottle";
-            }
-        }
-        System.out.println(beerNum + " " + word + "of beer on the wall." );
-        System.out.println(beerNum + " " + "of beer.");
-        System.out.println("Take one down.");
-        System.out.println("Pass  it around.");
-        beerNum = beerNum - 1;
+        String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+        System.out.println("What we need is a " + phrase);
 
-        if (beerNum > 0) {
-            System.out.println(beerNum + " " + word + "of beer on the wall");
-        } else {
-            System.out.println("No more bottles on the wall");
-        }
+
+
+
+
+
+
+
+
     }
 }
